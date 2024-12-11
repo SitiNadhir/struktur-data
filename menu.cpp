@@ -38,8 +38,15 @@ if (pesan == "pertama") {
 
 void tampildata(int data[]) {
     system("cls");
-    
-    
+    if (n > 0) {
+        cout << "Data yang ada:\n";
+        for (int i = 0; i < n; i++) {
+            cout << "Data ke-" << (i + 1) << ": " << data[i] << "\n";
+        }
+    } else {
+        cout << "Data kosong. Masukkan data terlebih dahulu.\n";
+    }
+    getch();
 }
 void sortingasc(int data[]){ 
   system("cls");
