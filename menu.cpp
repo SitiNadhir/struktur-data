@@ -16,19 +16,40 @@ system("cls");
 cout<<"Aplikasi Sorting Bubble"<<"\n";       
 cout<<"1. Masukan data"<<"\n";            
 cout<<"2. Tampilkan data"<<"\n";            
-cout<<"3.Sorting asc"<<"\n";           
+cout<<"3. Sorting asc"<<"\n";           
 cout<<"4. Sorting dsc"<<"\n";            
 cout<<"5. Exit"<<"\n";           
 cout<<"Masukan angka :";        
 
 }
 
-void mPertama(string pesan){
+void mPertama(string pesan, int data[]){
 system("cls");
-cout<<"hallo saya menu "<<pesan;
-getch();
+if (pesan == "pertama") {
+  cout << "Masukkan jumlah data: ";
+  cin >> n;
+  for (int i = 0; i < n; i++) {
+    cout << "Masukkan data ke-" << (i + 1) << ": ";
+    cin >> data[i];
+      }
+  }
+  getch();
 }
 
+void tampildata(int data[]) {
+    system("cls");
+    
+    
+}
+void sortingasc(int data[]){ 
+  system("cls");
+  
+  }
+
+void sortingdsc(int data[]){
+  system("cls");
+  
+}
 
 int main() {
 int data[100];
@@ -43,18 +64,18 @@ do
   {
    case '1':
     /* code */
-    mPertama("pertama");
+    mPertama("pertama", data);
     break;
    case '2':
-    mPertama("ke- dua");
+    tampildata(data);
     /* code */ 
     break;  
    case '3':
-    mPertama("ke- tiga");
+    sortingasc(data);
     /* code */
     break;  
    case '4':
-    mPertama("ke- empat");
+    sortingdsc(data);
     /* code */
     break;  
   case '5':
